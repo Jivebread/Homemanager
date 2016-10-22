@@ -8,108 +8,66 @@ import com.example.lg.homemanager3.R;
 
 public class Utility {
     public static String [] appliance = {"Water Heater","Air Conditioner"};
-    public static int [] resourcesIds = new int []{R.drawable.images,R.drawable.images};
-    private boolean airConIsRunning;
-    private int currentAirTemp;
-    private int desiredAirTemp;
+    public static int [] resourcesIds = new int []{R.drawable.waterheater,R.drawable.airconditioner};
+    // add cycle type and cycle time for washer/dryer?  is this an enum?
 
-    private boolean waterHeaterisRunning;
-    private boolean maintenaceAlert;
-    private int waterTemp;
-    private int gallonsUsed;
+    private boolean airConIsRunning = false;
+    private int currentAirTemp = 0;
+    private int desiredAirTemp = 0;
+    private int airConFilterDaysRemaining = 0;
 
-    private int co1BatteryLevel;
-    private boolean co1Detected;
+    private boolean waterHeaterisRunning = false;
+    private boolean maintenaceAlert = false;
+    private int currentWaterTemp = 0;
 
-    private int FireBatteryLevel;
-    private boolean FireDetected;
+    private boolean coDetectorisRunning = false;
+    private int coBatteryLevel = 0;
+    private boolean coDetected = false;
 
+    private boolean fireDetectorisRunning = false;
+    private int fireBatteryLevel = 0;
+    private boolean fireDetected = false;
+
+    public int getAirConFilterDaysRemaining() {return airConFilterDaysRemaining;}
+    public boolean isCoDetectorisRunning() {return coDetectorisRunning;}
+    public boolean isFireDetectorisRunning() {return fireDetectorisRunning;}
     public boolean isAirConIsRunning() {
         return airConIsRunning;
     }
-
-    public void setAirConIsRunning(boolean airConIsRunning) {
-        this.airConIsRunning = airConIsRunning;
-    }
-
     public int getCurrentAirTemp() {
         return currentAirTemp;
     }
-
-    public void setCurrentAirTemp(int currentAirTemp) {
-        this.currentAirTemp = currentAirTemp;
-    }
-
     public int getDesiredAirTemp() {
         return desiredAirTemp;
     }
-
-    public void setDesiredAirTemp(int desiredAirTemp) {
-        this.desiredAirTemp = desiredAirTemp;
+    public int getCoBatteryLevel() {
+        return coBatteryLevel;
     }
-
+    public boolean isCoDetected() {
+        return coDetected;
+    }
+    public int getFireBatteryLevel() {
+        return fireBatteryLevel;
+    }
+    public boolean isFireDetected() {
+        return fireDetected;
+    }
     public boolean isWaterHeaterisRunning() {
         return waterHeaterisRunning;
     }
-
-    public void setWaterHeaterisRunning(boolean waterHeaterisRunning) {
-        this.waterHeaterisRunning = waterHeaterisRunning;
-    }
-
     public boolean isMaintenaceAlert() {
         return maintenaceAlert;
     }
-
-    public void setMaintenaceAlert(boolean maintenaceAlert) {
-        this.maintenaceAlert = maintenaceAlert;
+    public int getCurrentWaterTemp() {
+        return currentWaterTemp;
     }
 
-    public int getWaterTemp() {
-        return waterTemp;
-    }
-
-    public void setWaterTemp(int waterTemp) {
-        this.waterTemp = waterTemp;
-    }
-
-    public int getGallonsUsed() {
-        return gallonsUsed;
-    }
-
-    public void setGallonsUsed(int gallonsUsed) {
-        this.gallonsUsed = gallonsUsed;
-    }
-
-    public int getCo1BatteryLevel() {
-        return co1BatteryLevel;
-    }
-
-    public void setCo1BatteryLevel(int co1BatteryLevel) {
-        this.co1BatteryLevel = co1BatteryLevel;
-    }
-
-    public boolean isCo1Detected() {
-        return co1Detected;
-    }
-
-    public void setCo1Detected(boolean co1Detected) {
-        this.co1Detected = co1Detected;
-    }
-
-    public int getFireBatteryLevel() {
-        return FireBatteryLevel;
-    }
-
-    public void setFireBatteryLevel(int fireBatteryLevel) {
-        FireBatteryLevel = fireBatteryLevel;
-    }
-
-    public boolean isFireDetected() {
-        return FireDetected;
-    }
-
-    public void setFireDetected(boolean fireDetected) {
-        FireDetected = fireDetected;
-    }
-
+    public void setAirConIsRunning(boolean airConIsRunning) {
+        this.airConIsRunning = airConIsRunning;}
+    public void incrementDesiredAirTemp() {
+        this.desiredAirTemp = this.desiredAirTemp + 1;}
+    public void decrementDesiredAirTemp() {
+        this.desiredAirTemp = this.desiredAirTemp - 1;}
+    public void setWaterHeaterisRunning(boolean waterHeaterisRunning) {
+        this.waterHeaterisRunning = waterHeaterisRunning;}
 }
