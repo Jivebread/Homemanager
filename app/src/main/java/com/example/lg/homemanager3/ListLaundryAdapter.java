@@ -9,22 +9,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.lg.homemanager3.Fragment.KitchenFragment;
-import com.example.lg.homemanager3.Fragment.LaundryFragment;
-import com.example.lg.homemanager3.Fragment.TemperatureFragment;
 import com.example.lg.homemanager3.model.Kitchen;
 import com.example.lg.homemanager3.model.Laundry;
-import com.example.lg.homemanager3.model.Utility;
-
-import org.w3c.dom.Text;
-
-import static com.example.lg.homemanager3.PagerAdapter.tabposition;
 
 /**
  * Created by LG on 10/21/2016.
  */
 
-public class ListAdapter extends RecyclerView.Adapter {
+public class ListLaundryAdapter extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false);
@@ -39,7 +31,7 @@ public class ListAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemCount() {
 
-                return Kitchen.appliance.length ;
+                return Laundry.appliance.length  ;
 
     }
     private class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -54,8 +46,8 @@ public class ListAdapter extends RecyclerView.Adapter {
         }
         public void bindView (int position){
 
-                    mTextView.setText(Kitchen.appliance[position]);
-                    mImageView.setImageResource(Kitchen.resourcesIds[position]);
+                    mTextView.setText(Laundry.appliance[position]);
+                    mImageView.setImageResource(Laundry.resourcesIds[position]);
             }
 
 

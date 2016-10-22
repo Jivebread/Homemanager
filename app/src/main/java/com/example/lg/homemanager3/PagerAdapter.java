@@ -14,7 +14,7 @@ import com.example.lg.homemanager3.Fragment.TemperatureFragment;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
     private int mNumOfTabs;
-
+    public static int tabposition;
     public PagerAdapter(FragmentManager fm, int NumOfTabs) {
         super(fm);
         this.mNumOfTabs= NumOfTabs;
@@ -28,9 +28,11 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
                 return tab1;
             case 1:
                 LaundryFragment tab2 = new LaundryFragment();
+
                 return tab2;
             case 2:
                 TemperatureFragment tab3 = new TemperatureFragment();
+
                 return tab3;
             default:
                 return null;
