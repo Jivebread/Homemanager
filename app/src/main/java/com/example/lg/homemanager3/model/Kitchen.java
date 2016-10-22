@@ -7,7 +7,7 @@ import com.example.lg.homemanager3.R;
  */
 
 public class Kitchen {
-    public static String [] appliance = {"Refrigerator","Dish washer" ,"Oven"};
+    public static String [] appliance = {"Refrigerator","Dish Washer" ,"Oven"};
     public static int [] resourcesIds = new int []{R.drawable.images,R.drawable.images,R.drawable.images};
         private boolean fridgeIsRunning;
         private boolean fridgeDoorIsClosed;

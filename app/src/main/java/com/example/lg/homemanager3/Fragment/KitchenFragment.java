@@ -1,8 +1,6 @@
 package com.example.lg.homemanager3.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -11,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.lg.homemanager3.R;
-import com.example.lg.homemanager3.RefrigeratorActivity;
 
 /**
  * Created by Team Simon on 10/21/2016.

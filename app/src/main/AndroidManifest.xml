@@ -24,7 +24,21 @@
         </intent-filter>
     </activity>
         <activity
-            android:name="com.example.lg.homemanager3.RefrigeratorActivity"
+            android:name="com.example.lg.homemanager3.lastsegemnt.RefrigeratorActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lg.homemanager3.lastsegemnt.Oven"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lg.homemanager3.lastsegemnt.DishWasher"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

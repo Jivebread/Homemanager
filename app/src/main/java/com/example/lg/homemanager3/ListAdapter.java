@@ -2,39 +2,21 @@ package com.example.lg.homemanager3;
 
 
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
 
-import com.example.lg.homemanager3.Fragment.KitchenFragment;
-import com.example.lg.homemanager3.Fragment.LaundryFragment;
-import com.example.lg.homemanager3.Fragment.List_fragment;
 import com.example.lg.homemanager3.Fragment.OnFragmentSelectedInterface;
-import com.example.lg.homemanager3.Fragment.TemperatureFragment;
-import com.example.lg.homemanager3.Fragment.ViewPagerFragment;
+import com.example.lg.homemanager3.lastsegemnt.DishWasher;
+import com.example.lg.homemanager3.lastsegemnt.Oven;
+import com.example.lg.homemanager3.lastsegemnt.RefrigeratorActivity;
 import com.example.lg.homemanager3.model.Kitchen;
-import com.example.lg.homemanager3.model.Laundry;
-import com.example.lg.homemanager3.model.Utility;
 
-import org.w3c.dom.Text;
-
-import static android.R.id.list;
-import static com.example.lg.homemanager3.PagerAdapter.tabposition;
-import static java.security.AccessController.getContext;
+import static android.R.attr.name;
 
 /**
  * Created by LG on 10/21/2016.
@@ -80,7 +62,16 @@ public class ListAdapter extends RecyclerView.Adapter {
                     itemView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intent = new Intent(itemView.getContext(), RefrigeratorActivity.class);
+                            String name = mTextView.getText().toString();
+                            Intent intent= new Intent();
+                            if (name == "Refrigerator")
+                            intent = new Intent(itemView.getContext(), RefrigeratorActivity.class);
+                            else if (name == "Dish Washer")
+                                intent = new Intent(itemView.getContext(), DishWasher.class);
+                            else if (name == "Oven")
+                                intent = new Intent(itemView.getContext(), Oven.class);
+
+                            intent.putExtra("NAME",name);
                             itemView.getContext().startActivity(intent);
 
                         }
