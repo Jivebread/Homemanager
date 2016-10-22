@@ -23,6 +23,13 @@
 
         </intent-filter>
     </activity>
+        <activity
+            android:name="com.example.lg.homemanager3.RefrigeratorActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
 
     </application>
 

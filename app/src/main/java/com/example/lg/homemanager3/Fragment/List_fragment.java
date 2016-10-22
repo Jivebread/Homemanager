@@ -17,17 +17,23 @@ import com.example.lg.homemanager3.R;
  * Created by LG on 10/22/2016.
  */
 
-public class List_fragment extends Fragment {
+public class List_fragment extends Fragment implements OnFragmentSelectedInterface {
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
+        OnFragmentSelectedInterface listener =(OnFragmentSelectedInterface) this;
         View view = inflater.inflate(R.layout.fragment_list,container,false);
         RecyclerView recyclerview = (RecyclerView) view.findViewById(R.id.listRecyclerView);
-        ListAdapter listAdapter = new ListAdapter();
+        ListAdapter listAdapter = new ListAdapter(listener);
         recyclerview.setAdapter(listAdapter);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerview.setLayoutManager(layoutManager);
         return view;
+    }
+
+    @Override
+    public void onListFragmentSelected(int index) {
+
     }
 }
