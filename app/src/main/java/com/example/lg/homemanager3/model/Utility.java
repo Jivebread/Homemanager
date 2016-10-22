@@ -7,7 +7,7 @@ import com.example.lg.homemanager3.R;
  */
 
 public class Utility {
-    public static String [] appliance = {"Water Heater","AirConditioner"};
+    public static String [] appliance = {"Water Heater","Air Conditioner"};
     public static int [] resourcesIds = new int []{R.drawable.images,R.drawable.images};
     private boolean airConIsRunning;
     private int currentAirTemp;

@@ -11,15 +11,15 @@ import com.example.lg.homemanager3.R;
  * Created by LG on 10/22/2016.
  */
 
-public class DishWasher extends Activity {
+public class AirConditioner extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dishwasher_layout);
+        setContentView(R.layout.airconditioner_layout);
         Intent intent = getIntent();
         String name = intent.getStringExtra("NAME");
-        TextView mtextView = (TextView) findViewById(R.id.dishwasherid);
-        mtextView.setText("DishWasher");
+        TextView mtextView = (TextView) findViewById(R.id.airconditionerid);
+        mtextView.setText("AirConditioner");
 
 
 

@@ -8,6 +8,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity android:name = ".splash">
+            <intent-filter>
+                <action android:name = "android.intent.action.MAIN"/>
+                <category android:name = "android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity" >
             <intent-filter>
@@ -16,13 +23,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name = ".splash">
-        <intent-filter>
-            <action android:name = "android.intent.action.MAIN"/>
-            <category android:name = "android.intent.category.LAUNCHER"/>
 
-        </intent-filter>
-    </activity>
         <activity
             android:name="com.example.lg.homemanager3.lastsegemnt.RefrigeratorActivity"
             android:label="@string/app_name" >
@@ -39,6 +40,34 @@
         </activity>
         <activity
             android:name="com.example.lg.homemanager3.lastsegemnt.DishWasher"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lg.homemanager3.lastsegemnt.AirConditioner"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lg.homemanager3.lastsegemnt.Dryer"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lg.homemanager3.lastsegemnt.Washer"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lg.homemanager3.lastsegemnt.WaterHeater"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
