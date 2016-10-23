@@ -12,13 +12,12 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.example.lg.homemanager3.R;
-import com.example.lg.homemanager3.model.Kitchen;
-import com.example.lg.homemanager3.model.Laundry;
+
 import com.example.lg.homemanager3.model.Utility;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
+
 
 import java.io.IOException;
 

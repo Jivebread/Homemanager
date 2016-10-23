@@ -2,30 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:text="MaintenanceAlert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/WaterHeaterRunningid"
-        android:layout_alignEnd="@+id/WaterHeaterRunningid"
-        android:layout_marginTop="46dp"
-        android:id="@+id/Maintenanceid"
-        android:fontFamily="sans-serif-condensed"
-        android:textColor="?attr/editTextColor"
-        android:textSize="18sp" />
-
-    <TextView
-        android:text="CurrentWaterTemp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Maintenanceid"
-        android:layout_alignStart="@+id/Maintenanceid"
-        android:layout_marginTop="45dp"
-        android:id="@+id/CurrentWaterTempid"
-        android:fontFamily="sans-serif-condensed"
-        android:textColor="?attr/editTextColor"
-        android:textSize="18sp" />
-
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -39,32 +15,14 @@
         android:text="WaterHeater Running"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="123dp"
+        android:layout_marginTop="141dp"
         android:id="@+id/WaterHeaterRunningid"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="22dp"
         android:fontFamily="sans-serif-condensed"
         android:textColor="?attr/editTextColor"
-        android:textSize="18sp" />
-
-    <TextView
-        android:text="0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Warningid"
-        android:textSize="30sp"
-        android:layout_above="@+id/waterheaterset"
-        android:layout_alignStart="@+id/textView" />
-
-    <TextView
-        android:text="NONE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textSize="30sp"
-        android:layout_alignTop="@+id/Maintenanceid"
-        android:layout_alignEnd="@+id/WaterHeaterRunningToggleid" />
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -73,5 +31,48 @@
         android:layout_alignBaseline="@+id/WaterHeaterRunningid"
         android:layout_alignBottom="@+id/WaterHeaterRunningid"
         android:layout_toEndOf="@+id/waterheaterset" />
+
+    <TextView
+        android:text="MaintenanceAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/Maintenanceid"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp"
+        android:layout_below="@+id/WaterHeaterRunningToggleid"
+        android:layout_alignEnd="@+id/WaterHeaterRunningid" />
+
+    <TextView
+        android:text="NONE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/Maintenanceid"
+        android:layout_alignStart="@+id/WaterHeaterRunningToggleid" />
+
+    <TextView
+        android:text="CurrentWaterTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/CurrentWaterTempid"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/Maintenanceid" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Warningid"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/CurrentWaterTempid"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="11dp" />
 
 </RelativeLayout>

@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.lg.homemanager3.ListAdapter;
-import com.example.lg.homemanager3.ListLaundryAdapter;
 import com.example.lg.homemanager3.R;
 
 /**

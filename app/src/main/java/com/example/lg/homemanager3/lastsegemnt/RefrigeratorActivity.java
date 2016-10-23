@@ -2,7 +2,6 @@ package com.example.lg.homemanager3.lastsegemnt;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -14,12 +13,11 @@ import android.widget.ToggleButton;
 
 import com.example.lg.homemanager3.R;
 import com.example.lg.homemanager3.model.Kitchen;
-import com.example.lg.homemanager3.model.Laundry;
-import com.example.lg.homemanager3.model.Utility;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
+
 
 import java.io.IOException;
 

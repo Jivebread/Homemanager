@@ -4,27 +4,6 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:text="DoorClosed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/DishWasherRunningid"
-        android:layout_alignStart="@+id/DishWasherRunningid"
-        android:layout_marginTop="58dp"
-        android:id="@+id/WasherDoorClosedid"
-        android:textColorLink="?attr/editTextColor"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-condensed" />
-
-    <ToggleButton
-        android:text="ToggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/WasherRunningid"
-        android:layout_alignStart="@+id/WasherRunningid"
-        android:layout_marginTop="11dp"
-        android:id="@+id/WasherDoorClosedtoggleid" />
-
-    <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,19 +11,6 @@
         android:layout_alignEnd="@+id/WasherDoorClosedid"
         android:layout_marginEnd="13dp"
         android:id="@+id/Cycleid"
-        android:textColorLink="?attr/editTextColor"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-condensed" />
-
-    <TextView
-        android:text="WasherRunning"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="141dp"
-        android:id="@+id/DishWasherRunningid"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
         android:textColorLink="?attr/editTextColor"
         android:textSize="18sp"
         android:fontFamily="sans-serif-condensed" />
@@ -58,15 +24,16 @@
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@+id/WasherDoorClosedtoggleid" />
 
-    <ToggleButton
-        android:text="ToggleButton"
+    <TextView
+        android:text="DoorClosed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/WasherRunningid"
-        android:layout_alignBaseline="@+id/DishWasherRunningid"
-        android:layout_alignBottom="@+id/DishWasherRunningid"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="23dp" />
+        android:id="@+id/WasherDoorClosedid"
+        android:textColorLink="?attr/editTextColor"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignBottom="@+id/WasherDoorClosedtoggleid"
+        android:layout_alignEnd="@+id/DishWasherRunningid" />
 
     <TextView
         android:text="CurrentCycle"
@@ -76,7 +43,39 @@
         android:textColorLink="?attr/editTextColor"
         android:textSize="18sp"
         android:fontFamily="sans-serif-condensed"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="61dp"
         android:layout_above="@+id/WasherSetid"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignEnd="@+id/WasherSetid"
+        android:layout_marginEnd="68dp" />
+
+    <TextView
+        android:text="WasherRunning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="147dp"
+        android:id="@+id/DishWasherRunningid"
+        android:textColorLink="?attr/editTextColor"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/WasherSetid" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/WasherRunningid"
+        android:layout_marginEnd="57dp"
+        android:layout_alignBaseline="@+id/DishWasherRunningid"
+        android:layout_alignBottom="@+id/DishWasherRunningid"
+        android:layout_alignParentEnd="true" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/WasherDoorClosedtoggleid"
+        android:layout_below="@+id/WasherRunningid"
+        android:layout_alignStart="@+id/WasherRunningid" />
 </RelativeLayout>

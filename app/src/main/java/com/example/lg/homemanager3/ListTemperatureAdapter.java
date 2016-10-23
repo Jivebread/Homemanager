@@ -11,11 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.lg.homemanager3.lastsegemnt.AirConditioner;
-import com.example.lg.homemanager3.lastsegemnt.DishWasher;
-import com.example.lg.homemanager3.lastsegemnt.Oven;
-import com.example.lg.homemanager3.lastsegemnt.RefrigeratorActivity;
+
 import com.example.lg.homemanager3.lastsegemnt.WaterHeater;
-import com.example.lg.homemanager3.model.Kitchen;
+
 import com.example.lg.homemanager3.model.Utility;
 
 /**

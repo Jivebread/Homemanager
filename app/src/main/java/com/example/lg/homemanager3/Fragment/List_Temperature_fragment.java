@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.lg.homemanager3.ListLaundryAdapter;
+
 import com.example.lg.homemanager3.ListTemperatureAdapter;
 import com.example.lg.homemanager3.R;
 

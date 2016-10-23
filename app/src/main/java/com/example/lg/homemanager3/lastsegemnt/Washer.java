@@ -2,7 +2,7 @@ package com.example.lg.homemanager3.lastsegemnt;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
+
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -13,9 +13,8 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.example.lg.homemanager3.R;
-import com.example.lg.homemanager3.model.Kitchen;
 import com.example.lg.homemanager3.model.Laundry;
-import com.example.lg.homemanager3.model.Utility;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,7 +27,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import static com.example.lg.homemanager3.MainActivity.laundrydata;
+
 
 /**
  * Created by LG on 10/22/2016.

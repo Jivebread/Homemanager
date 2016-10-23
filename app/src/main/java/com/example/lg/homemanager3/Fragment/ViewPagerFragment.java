@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import com.example.lg.homemanager3.R;
 
-import static android.R.attr.fragment;
+
 
 /**
  * Created by LG on 10/22/2016.
