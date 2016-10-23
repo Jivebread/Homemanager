@@ -28,6 +28,26 @@ public class Utility {
     private int fireBatteryLevel = 0;
     private boolean fireDetected = false;
 
+    public void setCurrentAirTemp(int currentAirTemp) {
+        this.currentAirTemp = currentAirTemp;
+    }
+
+    public void setDesiredAirTemp(int desiredAirTemp) {
+        this.desiredAirTemp = desiredAirTemp;
+    }
+
+    public void setAirConFilterDaysRemaining(int airConFilterDaysRemaining) {
+        this.airConFilterDaysRemaining = airConFilterDaysRemaining;
+    }
+
+    public void setMaintenaceAlert(boolean maintenaceAlert) {
+        this.maintenaceAlert = maintenaceAlert;
+    }
+
+    public void setCurrentWaterTemp(int currentWaterTemp) {
+        this.currentWaterTemp = currentWaterTemp;
+    }
+
     public int getAirConFilterDaysRemaining() {return airConFilterDaysRemaining;}
     public boolean isCoDetectorisRunning() {return coDetectorisRunning;}
     public boolean isFireDetectorisRunning() {return fireDetectorisRunning;}

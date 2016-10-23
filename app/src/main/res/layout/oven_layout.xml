@@ -10,7 +10,10 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="107dp"
         android:layout_marginTop="137dp"
-        android:id="@+id/OvenRunningid" />
+        android:id="@+id/OvenRunningid"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
 
     <TextView
         android:text="DoorClosed"
@@ -19,7 +22,10 @@
         android:layout_below="@+id/OvenRunningid"
         android:layout_alignEnd="@+id/OvenRunningid"
         android:layout_marginTop="72dp"
-        android:id="@+id/OvenDoorClosedid" />
+        android:id="@+id/OvenDoorClosedid"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
 
     <ToggleButton
         android:text="ToggleButton"
@@ -47,7 +53,10 @@
         android:layout_below="@+id/ClosedToggleid"
         android:layout_alignStart="@+id/OvenDoorClosedid"
         android:layout_marginTop="42dp"
-        android:id="@+id/CurrentOvenTemp" />
+        android:id="@+id/CurrentOvenTemp"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
 
     <TextView
         android:text="DesiredTemp"
@@ -56,7 +65,10 @@
         android:layout_below="@+id/CurrentOvenTemp"
         android:layout_alignEnd="@+id/CurrentOvenTemp"
         android:layout_marginTop="53dp"
-        android:id="@+id/DesiredOvenTemp" />
+        android:id="@+id/DesiredOvenTemp"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
 
     <TextView
         android:text="0   F"
@@ -66,7 +78,10 @@
         android:layout_alignBaseline="@+id/CurrentOvenTemp"
         android:layout_alignBottom="@+id/CurrentOvenTemp"
         android:layout_alignEnd="@+id/ClosedToggleid"
-        android:layout_marginEnd="13dp" />
+        android:layout_marginEnd="13dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp" />
 
     <TextView
         android:text="0  F"
@@ -74,7 +89,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/DesiredOvenTempid"
         android:layout_above="@+id/ovensetid2"
-        android:layout_alignStart="@+id/RealCurrentTempid" />
+        android:layout_alignStart="@+id/RealCurrentTempid"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp" />
 
     <Button
         android:text="SET"

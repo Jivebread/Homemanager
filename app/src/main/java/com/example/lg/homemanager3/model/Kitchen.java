@@ -38,6 +38,19 @@ public class Kitchen {
     public boolean isFridgeDoorIsClosed() {
         return fridgeDoorIsClosed;
     }
+
+    public void setCurrentFridgeTemp(int currentFridgeTemp) {
+        this.currentFridgeTemp = currentFridgeTemp;
+    }
+
+    public void setDesiredFridgeTemp(int desiredFridgeTemp) {
+        this.desiredFridgeTemp = desiredFridgeTemp;
+    }
+
+    public void setWaterFilterDaysRemaining(int waterFilterDaysRemaining) {
+        this.waterFilterDaysRemaining = waterFilterDaysRemaining;
+    }
+
     public int getCurrentFridgeTemp() {
         return currentFridgeTemp;
     }

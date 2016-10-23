@@ -3,83 +3,110 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:text="LintTrapCleanid"
+        android:text="CycleType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/DryerCycleTypeid"
-        android:layout_alignEnd="@+id/DryerCycleTypeid"
-        android:layout_marginTop="45dp"
-        android:id="@+id/LintTrapCleanid" />
+        android:layout_marginTop="61dp"
+        android:id="@+id/DryerCycleid1"
 
-    <Button
-        android:text="Set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorLink="?attr/editTextColor"
+        android:textSize="18sp"
         android:layout_below="@+id/LintTrapCleanid"
-        android:layout_toEndOf="@+id/LintTrapCleanid"
-        android:layout_marginTop="88dp"
-        android:id="@+id/DryerSetid" />
-
-    <TextView
-        android:text="DryerRunning"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="137dp"
-        android:id="@+id/DryerRunningid"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignStart="@+id/DryerCycleToggleid" />
 
     <ToggleButton
         android:text="ToggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_alignEnd="@+id/DryerRunningToggleid"
-        android:id="@+id/DryerCycleToggleid" />
+        android:id="@+id/DryerCycleToggleid"
+
+        android:layout_marginEnd="73dp"
+        android:layout_alignTop="@+id/DryerRunningid"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DryerSetid"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp" />
+
+    <TextView
+        android:text="LintTrapCleanid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LintTrapCleanid"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorLink="?attr/editTextColor"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/DryerCycleTypeid" />
+
+    <TextView
+        android:text="None"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LintTrapValueid"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorLink="?attr/editTextColor"
+        android:textSize="18sp"
+
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/DryerCycleid1" />
+
+    <TextView
+        android:text="DryerCycleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DryerCycleTypeValueid"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorLink="?attr/editTextColor"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/DryerCycleid1"
+        android:layout_alignBottom="@+id/DryerCycleid1"
+        android:layout_alignEnd="@+id/LintTrapCleanid" />
+
+    <TextView
+        android:text="DryerRunning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DryerRunningid"
+
+        android:fontFamily="sans-serif-condensed"
+        android:textColorLink="?attr/editTextColor"
+        android:textSize="18sp"
+        android:layout_marginTop="104dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/DryerRunningToggleid" />
 
     <TextView
         android:text="DryerCycleType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/DryerCycleTypeid"
-        android:layout_centerVertical="true"
-        />
+
+        android:fontFamily="sans-serif-condensed"
+        android:textColorLink="?attr/editTextColor"
+        android:textSize="18sp"
+        android:layout_above="@+id/LintTrapCleanid"
+        android:layout_alignStart="@+id/DryerRunningid"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="46dp" />
 
     <ToggleButton
         android:text="ToggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/DryerRunningToggleid"
-        android:layout_alignTop="@+id/DryerRunningid"
-        android:layout_toEndOf="@+id/DryerSetid" />
 
-    <TextView
-        android:text="CycleType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:id="@+id/DryerCycleid1"
-        android:layout_below="@+id/DryerRunningToggleid"
-        android:layout_alignEnd="@+id/DryerRunningid"
-        android:layout_marginEnd="50dp" />
 
-    <TextView
-        android:text="DryerCycleType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:id="@+id/DryerCycleTypeValueid"
-        android:layout_alignBaseline="@+id/DryerCycleTypeid"
-        android:layout_alignBottom="@+id/DryerCycleTypeid"
-        android:layout_alignStart="@+id/lintTrapCleantoggleid" />
-
-    <TextView
-        android:text="None"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/LintTrapCleanid"
-        android:layout_toEndOf="@+id/DryerSetid"
-        android:id="@+id/LintTrapValueid" />
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/DryerSetid"
+        android:layout_toStartOf="@+id/DryerSetid"
+        android:layout_marginEnd="14dp" />
 
 </RelativeLayout>

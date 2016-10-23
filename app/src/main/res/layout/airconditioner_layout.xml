@@ -10,7 +10,11 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="99dp"
         android:layout_marginTop="95dp"
-        android:id="@+id/AirConRunnigid" />
+        android:id="@+id/AirConRunnigid"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorLink="?attr/editTextColor"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp" />
 
     <TextView
         android:text="DesiredAirTemp"
@@ -19,7 +23,11 @@
         android:layout_below="@+id/CurrentAirTempid"
         android:layout_alignStart="@+id/CurrentAirTempid"
         android:layout_marginTop="42dp"
-        android:id="@+id/DesiredAirTempid" />
+        android:id="@+id/DesiredAirTempid"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorLink="?attr/editTextColor"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp" />
 
     <TextView
         android:text="FilterDaysleft"
@@ -27,7 +35,11 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignEnd="@+id/DesiredAirTempid"
-        android:id="@+id/AirFilterDaysid" />
+        android:id="@+id/AirFilterDaysid"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorLink="?attr/editTextColor"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp" />
 
     <ToggleButton
         android:text="ToggleButton"
@@ -44,7 +56,10 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/AirFilterDaysid"
         android:layout_alignEnd="@+id/DesiredAirTempValueid"
-        android:id="@+id/FilterDaysLeftValueid" />
+        android:id="@+id/FilterDaysLeftValueid"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
 
     <Button
         android:text="Set"
@@ -62,7 +77,11 @@
         android:layout_marginTop="41dp"
         android:id="@+id/CurrentAirTempid"
         android:layout_below="@+id/AirConRunnigid"
-        android:layout_alignStart="@+id/AirConRunnigid" />
+        android:layout_alignStart="@+id/AirConRunnigid"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorLink="?attr/editTextColor"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp" />
 
     <TextView
         android:text="0 F"
@@ -71,7 +90,10 @@
         android:id="@+id/DesiredAirTempValueid"
         android:layout_alignBaseline="@+id/DesiredAirTempid"
         android:layout_alignBottom="@+id/DesiredAirTempid"
-        android:layout_alignStart="@+id/CurrentAirTempValueid" />
+        android:layout_alignStart="@+id/CurrentAirTempValueid"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
 
     <TextView
         android:text="0 F"
@@ -79,6 +101,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/CurrentAirTempValueid"
         android:layout_above="@+id/DesiredAirTempid"
-        android:layout_alignStart="@+id/AirConRunningToggleid" />
+        android:layout_alignStart="@+id/AirConRunningToggleid"
+        android:textColor="?attr/editTextColor"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
 
 </RelativeLayout>

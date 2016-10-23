@@ -12,6 +12,24 @@ public class Laundry {
     public static int [] resourcesIds = new int []{R.drawable.washingmachine,R.drawable.ryer};
     private boolean clothesWasherIsRunning;
     private boolean clothesWasherDoorIsClosed;
+    private String clothesWasherCycleSize;
+    private String clothesWasherCycleType;
+
+    public String getClothesWasherCycleSize() {
+        return clothesWasherCycleSize;
+    }
+
+    public void setClothesWasherCycleSize(String clothesWasherCycleSize) {
+        this.clothesWasherCycleSize = clothesWasherCycleSize;
+    }
+
+    public String getClothesWasherCycleType() {
+        return clothesWasherCycleType;
+    }
+
+    public void setClothesWasherCycleType(String clothesWasherCycleType) {
+        this.clothesWasherCycleType = clothesWasherCycleType;
+    }
 
     private boolean dryerIsRunning;
     private boolean dryerDoorIsClosed;
