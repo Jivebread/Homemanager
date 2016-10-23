@@ -101,12 +101,10 @@
         android:text="ToggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/DryerRunningToggleid"
+        android:id="@+id/toggleButtonid"
 
 
-        android:layout_marginBottom="20dp"
-        android:layout_above="@+id/DryerSetid"
-        android:layout_toStartOf="@+id/DryerSetid"
-        android:layout_marginEnd="14dp" />
+        android:layout_alignTop="@+id/DryerCycleTypeid"
+        android:layout_alignStart="@+id/LintTrapValueid" />
 
 </RelativeLayout>

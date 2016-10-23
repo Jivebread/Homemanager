@@ -131,8 +131,7 @@ public class MainActivity extends AppCompatActivity {
         JSONObject kitchen = new JSONObject(jsonData);
         JSONObject kitchenz = kitchen.getJSONObject("appliances").getJSONObject("fridge");
         Kitchen kitchenking = new Kitchen();
-        kitchenking.setFridgeDoorIsClosed(kitchenz.getBoolean("fridgeDoorIsClose"));
-        kitchenking.setFridgeIsRunning(kitchenz.getBoolean("fridgeIsRunning"));
+
         kitchenking.setCurrentFridgeTemp(kitchenz.getInt("currentFridgeTemp"));
         kitchenking.setDesiredFridgeTemp(kitchenz.getInt("desiredFridgeTemp"));
         kitchenking.setWaterFilterDaysRemaining(kitchenz.getInt("waterFilterDaysRemaining"));

@@ -120,7 +120,7 @@ public class Washer extends Activity {
 
     private Laundry getlaundryDetails(String jsonData) throws JSONException {
         JSONObject  laundry= new JSONObject(jsonData);
-        JSONObject laundryz = laundry.getJSONObject("washer");
+        JSONObject laundryz = laundry.getJSONObject("appliances").getJSONObject("washer");
         Laundry laundryking = new Laundry();
         laundryking.setClothesWasherCycleType(laundryz.getString("clothesWasherCycleType"));
         laundryking.setClothesWasherCycleSize(laundryz.getString("clothesWasherCycleSize"));

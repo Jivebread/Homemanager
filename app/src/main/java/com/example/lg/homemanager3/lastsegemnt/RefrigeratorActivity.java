@@ -51,7 +51,7 @@ public class RefrigeratorActivity extends Activity {
         mButton = (Button)findViewById(R.id.refrigeratorsetid);
         mToggleButton = (ToggleButton) findViewById(R.id.toggleButton7);
         mToggleButton2 = (ToggleButton) findViewById(R.id.toggleButton8);
-       /* mButton.setOnClickListener(new View.OnClickListener() {
+        mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -75,7 +75,7 @@ public class RefrigeratorActivity extends Activity {
 
             }
         });
-        */
+
         if (isNetworkAvailable()) {
             String jsonUrl = "http://spectrum.troy.edu/CSClub/json/appliance_data_v04.json";
             OkHttpClient client = new OkHttpClient();
@@ -122,10 +122,8 @@ public class RefrigeratorActivity extends Activity {
 
     private Kitchen getkitchenDetails(String jsonData) throws JSONException {
         JSONObject kitchen = new JSONObject(jsonData);
-        JSONObject kitchenz = kitchen.getJSONObject("fridge");
+        JSONObject kitchenz = kitchen.getJSONObject("appliances").getJSONObject("fridge");
         Kitchen kitchenking = new Kitchen();
-        kitchenking.setFridgeDoorIsClosed(kitchenz.getBoolean("fridgeDoorIsClose"));
-        kitchenking.setFridgeIsRunning(kitchenz.getBoolean("fridgeIsRunning"));
         kitchenking.setCurrentFridgeTemp(kitchenz.getInt("currentFridgeTemp"));
         kitchenking.setDesiredFridgeTemp(kitchenz.getInt("desiredFridgeTemp"));
         kitchenking.setWaterFilterDaysRemaining(kitchenz.getInt("waterFilterDaysRemaining"));

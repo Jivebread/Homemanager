@@ -83,7 +83,6 @@ public class WaterHeater extends Activity {
                 public void onResponse(Call call, Response response) throws IOException {
                     String jsonData = response.body().string();
                     if (response.isSuccessful()) {
-
                         try {
                             utility = getutilDetails(jsonData);
                             runOnUiThread(new Runnable() {
@@ -110,7 +109,7 @@ public class WaterHeater extends Activity {
 
     private Utility getutilDetails(String jsonData) throws JSONException {
         JSONObject utilitys = new JSONObject(jsonData);
-        JSONObject utilityz = utilitys.getJSONObject("waterHeater");
+        JSONObject utilityz = utilitys.getJSONObject("appliances").getJSONObject("waterHeater");
         Utility utilityking = new Utility();
         utilityking.setCurrentWaterTemp(utilityz.getInt("currentWaterTemp"));
         utilityking.setMaintenaceAlert(utilityz.getBoolean("maintenanceAlert"));
