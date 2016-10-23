@@ -1,19 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:text="refrigerator"
-        android:layout_width="match_parent"
+        android:text="Fridgeclosed"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"/>
+        android:layout_below="@+id/fridgerunning"
+        android:layout_alignStart="@+id/fridgerunning"
+        android:layout_marginTop="61dp"
+        android:id="@+id/Fridgeclosedid" />
+
+    <TextView
+        android:text="CurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Fridgeclosedid"
+        android:layout_alignStart="@+id/Fridgeclosedid"
+        android:layout_marginTop="56dp"
+        android:id="@+id/CurrentTempid" />
+
+    <TextView
+        android:text="DesiredTempid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CurrentTempid"
+        android:layout_alignEnd="@+id/CurrentTempid"
+        android:layout_marginTop="58dp"
+        android:id="@+id/DesiredTempid" />
+
+    <TextView
+        android:text="FilterDayremained"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DesiredTempid"
+        android:layout_alignEnd="@+id/DesiredTempid"
+        android:layout_marginTop="55dp"
+        android:id="@+id/FilterDayremainid" />
 
     <ToggleButton
         android:text="ToggleButton"
-        android:layout_width="120dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/toggleButton"/>
+        android:layout_above="@+id/CurrentTempid"
+        android:layout_toEndOf="@+id/fridgerunning"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="58dp"
+        android:id="@+id/toggleButton7" />
 
-</LinearLayout>
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fridgerunning"
+        android:layout_alignStart="@+id/toggleButton7"
+        android:layout_marginTop="48dp"
+        android:id="@+id/toggleButton8" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/CurrentTempid"
+        android:layout_alignEnd="@+id/toggleButton8"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/textView24" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/DesiredTempid"
+        android:layout_alignStart="@+id/textView24"
+        android:id="@+id/textView25" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/FilterDayremainid"
+        android:layout_alignStart="@+id/textView25"
+        android:id="@+id/textView26" />
+
+    <TextView
+        android:text="FridgeRunning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="99dp"
+        android:id="@+id/fridgerunning"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:id="@+id/refrigeratorsetid"
+        android:layout_below="@+id/FilterDayremainid"
+        android:layout_toEndOf="@+id/FilterDayremainid"
+        android:text="Set" />
+</RelativeLayout>

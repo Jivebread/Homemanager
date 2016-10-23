@@ -52,6 +52,7 @@ public class Utility {
     public boolean isFireDetected() {
         return fireDetected;
     }
+
     public boolean isWaterHeaterisRunning() {
         return waterHeaterisRunning;
     }

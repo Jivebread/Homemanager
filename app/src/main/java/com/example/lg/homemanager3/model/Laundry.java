@@ -8,10 +8,11 @@ import com.example.lg.homemanager3.R;
 
 public class Laundry {
     // add cycle type and cycle time for washer/dryer?  is this an enum?
-    public static String [] appliance = {"Washer","ryer"};
+    public static String [] appliance = {"Washer","Dryer"};
     public static int [] resourcesIds = new int []{R.drawable.washingmachine,R.drawable.ryer};
     private boolean clothesWasherIsRunning;
     private boolean clothesWasherDoorIsClosed;
+
     private boolean dryerIsRunning;
     private boolean dryerDoorIsClosed;
 

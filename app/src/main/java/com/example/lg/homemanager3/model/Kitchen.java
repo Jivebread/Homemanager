@@ -24,6 +24,14 @@ public class Kitchen {
     private boolean dishWasherDoorIsClosed = false;
     private String dishWasherCurrentCycle = " ";
 
+    public void setFridgeDoorIsClosed(boolean fridgeDoorIsClosed) {
+        this.fridgeDoorIsClosed = fridgeDoorIsClosed;
+    }
+
+    public void setFridgeIsRunning(boolean fridgeIsRunning) {
+        this.fridgeIsRunning = fridgeIsRunning;
+    }
+
     public boolean isFridgeIsRunning() {
         return fridgeIsRunning;
     }
@@ -54,6 +62,11 @@ public class Kitchen {
     public int getDesiredOvenTemp() {
         return desiredOvenTemp;
     }
+
+    public void setOvenDoorIsClosed(boolean ovenDoorIsClosed) {
+        this.ovenDoorIsClosed = ovenDoorIsClosed;
+    }
+
     public void setOvenIsRunning(boolean ovenIsRunning) {
         this.ovenIsRunning = ovenIsRunning;}
     public void incrementDesiredOvenTemp() {

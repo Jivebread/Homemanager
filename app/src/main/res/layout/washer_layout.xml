@@ -1,12 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-    <TextView
-        android:text="Washer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/washerid"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:text="WasherRunning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="126dp"
+        android:id="@+id/WasherRunningid" />
+
+    <TextView
+        android:text="WasherCycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WasherDoorClosedid"
+        android:layout_alignEnd="@+id/WasherDoorClosedid"
+        android:layout_marginTop="45dp"
+        android:id="@+id/WasherCycleSizeid" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/WasherCycleSizeid"
+        android:layout_toEndOf="@+id/WasherRunningid"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="43dp"
+        android:id="@+id/WasherRunningToggleid" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/WasherDoorClosedid"
+        android:layout_alignStart="@+id/WasherRunningToggleid"
+        android:id="@+id/WasherDoorClosedToggle" />
+
+    <TextView
+        android:text="Soft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/WasherCycleSizeid"
+        android:layout_alignStart="@+id/WasherDoorClosedToggle"
+        android:id="@+id/WasherCycleValueid" />
+
+    <TextView
+        android:text="Soft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/WasherCycleTypeid"
+        android:layout_alignStart="@+id/WasherCycleValueid"
+        android:id="@+id/WasherCycleTypeToggleid" />
+
+    <Button
+        android:text="Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WasherCycleTypeid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:id="@+id/WasherSetid" />
+
+    <TextView
+        android:text="WasherDoorclosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:id="@+id/WasherDoorClosedid"
+        android:layout_below="@+id/WasherRunningid"
+        android:layout_toStartOf="@+id/WasherRunningToggleid" />
+
+    <TextView
+        android:text="WasherCycleTYPE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:id="@+id/WasherCycleTypeid"
+        android:layout_below="@+id/WasherCycleSizeid"
+        android:layout_alignStart="@+id/WasherCycleSizeid" />
+</RelativeLayout>

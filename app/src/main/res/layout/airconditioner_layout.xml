@@ -1,12 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
+        android:text="AirConRunning"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/airconditionerid"/>
-</LinearLayout>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="95dp"
+        android:id="@+id/AirConRunnigid" />
+
+    <TextView
+        android:text="DesiredAirTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CurrentAirTempid"
+        android:layout_alignStart="@+id/CurrentAirTempid"
+        android:layout_marginTop="42dp"
+        android:id="@+id/DesiredAirTempid" />
+
+    <TextView
+        android:text="FilterDaysleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/DesiredAirTempid"
+        android:id="@+id/AirFilterDaysid" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CurrentAirTempid"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="64dp"
+        android:id="@+id/AirConRunningToggleid" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/AirFilterDaysid"
+        android:layout_alignEnd="@+id/DesiredAirTempValueid"
+        android:id="@+id/FilterDaysLeftValueid" />
+
+    <Button
+        android:text="Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AirFilterDaysid"
+        android:layout_toStartOf="@+id/FilterDaysLeftValueid"
+        android:layout_marginTop="96dp"
+        android:id="@+id/AirConSetid" />
+
+    <TextView
+        android:text="AirTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/CurrentAirTempid"
+        android:layout_below="@+id/AirConRunnigid"
+        android:layout_alignStart="@+id/AirConRunnigid" />
+
+    <TextView
+        android:text="0 F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DesiredAirTempValueid"
+        android:layout_alignBaseline="@+id/DesiredAirTempid"
+        android:layout_alignBottom="@+id/DesiredAirTempid"
+        android:layout_alignStart="@+id/CurrentAirTempValueid" />
+
+    <TextView
+        android:text="0 F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CurrentAirTempValueid"
+        android:layout_above="@+id/DesiredAirTempid"
+        android:layout_alignStart="@+id/AirConRunningToggleid" />
+
+</RelativeLayout>

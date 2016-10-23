@@ -1,12 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:text="oven"
-        android:layout_width="match_parent"
+        android:text="OvenRunning"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"/>
-</LinearLayout>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="137dp"
+        android:id="@+id/OvenRunningid" />
+
+    <TextView
+        android:text="DoorClosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OvenRunningid"
+        android:layout_alignEnd="@+id/OvenRunningid"
+        android:layout_marginTop="72dp"
+        android:id="@+id/OvenDoorClosedid" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/OvenDoorClosedid"
+        android:layout_toEndOf="@+id/OvenRunningid"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="67dp"
+        android:id="@+id/RunningToggleid" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OvenRunningid"
+        android:layout_alignEnd="@+id/RunningToggleid"
+        android:layout_marginTop="54dp"
+        android:id="@+id/ClosedToggleid" />
+
+    <TextView
+        android:text="CurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ClosedToggleid"
+        android:layout_alignStart="@+id/OvenDoorClosedid"
+        android:layout_marginTop="42dp"
+        android:id="@+id/CurrentOvenTemp" />
+
+    <TextView
+        android:text="DesiredTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CurrentOvenTemp"
+        android:layout_alignEnd="@+id/CurrentOvenTemp"
+        android:layout_marginTop="53dp"
+        android:id="@+id/DesiredOvenTemp" />
+
+    <TextView
+        android:text="0   F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RealCurrentTempid"
+        android:layout_alignBaseline="@+id/CurrentOvenTemp"
+        android:layout_alignBottom="@+id/CurrentOvenTemp"
+        android:layout_alignEnd="@+id/ClosedToggleid"
+        android:layout_marginEnd="13dp" />
+
+    <TextView
+        android:text="0  F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DesiredOvenTempid"
+        android:layout_above="@+id/ovensetid2"
+        android:layout_alignStart="@+id/RealCurrentTempid" />
+
+    <Button
+        android:text="SET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:id="@+id/ovensetid2"
+        android:layout_below="@+id/DesiredOvenTemp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
